@@ -64,8 +64,13 @@ def mean(dataset):
 
 print('El promedio de mi edad actual y mi edad en 20 años es',mean(media))
 
-print ('¿Tu edad es un carácter de tipo número?' ) 
-print(type(año_nacimiento))
+if type(año_nacimiento) == 'str':
+    print ('¿Tu edad es un carácter de tipo número? ','True' ) 
+else:
+    print ('¿Tu edad es un carácter de tipo número? ','false')
 
-print ('¿Tu nombre completo es un carácter de tipo alfanumérico?' )
-print(type(nombre_completo))
+if type(nombre_completo) == 'str':
+    print ('¿Tu nombre completo es un carácter de tipo alfanumérico? ','True' ) 
+else:
+    print ('¿Tu nombre completo es un carácter de tipo alfanumérico? ','false')
+ 
